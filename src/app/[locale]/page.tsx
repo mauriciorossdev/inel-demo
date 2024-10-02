@@ -6,11 +6,42 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+
+type ProgramaMasterclass = {
+  titleKey: string;
+  descriptionKey: string;
+  date: string;
+  hours: string;
+  gmt: string;
+  image: string;
+  isFree: boolean;
+}
+
+
+type ProgramaProgramas = {
+  titleKey: string;
+  subtitleKey: string;
+  descriptionKey: string;
+  image: string;
+}
+
+type ProgramaCursos = {
+  titleKey: string;
+  descriptionKey: string;
+  image: string;
+}
+
+
+
 export default function Home() {
   const t = useTranslations('Index')
   const [programaSeleccionado, setProgramaSeleccionado] = useState('programs')
 
-  const informacionProgramas = {
+  const informacionProgramas: { 
+    masterclass: ProgramaMasterclass[];
+    programs: ProgramaProgramas[];
+    courses: ProgramaCursos[];
+  } = {
     masterclass: [
       {
         titleKey: "masterclass.1.title",
@@ -73,7 +104,7 @@ export default function Home() {
     threshold: 0.1,
   })
 
-  const [hoveredPoint, setHoveredPoint] = useState(null)
+  const [hoveredPoint, setHoveredPoint] = useState<number | null>(null)
 
   const worldPoints = [
     { id: 1, x: "20%", y: "30%", name: "América del Norte" },
@@ -132,7 +163,8 @@ export default function Home() {
               transition={{ duration: 0.3 }}
               className="text-white text-center flex justify-center flex-col lg:flex-row gap-4"
             >
-              {informacionProgramas[programaSeleccionado].map((programa, index) => (
+              {informacionProgramas[programaSeleccionado as keyof typeof informacionProgramas]
+                .map((programa: ProgramaMasterclass | ProgramaProgramas | ProgramaCursos, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 1 }}
@@ -145,7 +177,7 @@ export default function Home() {
                     <p className="text-base mb-4">{t(programa.descriptionKey)}</p>
                   </div>
                   <Image src={programa.image} alt={t(programa.titleKey)} width={300} height={200} className="rounded-lg transition-all duration-300" />
-                  {programa.isFree && (
+                  {'isFree' in programa && programa.isFree && (
                     <div className='absolute bottom-8 right-[34px] w-1/2 h-[32px] bg-[#0088cc] text-white font-bold text-lg rounded-l-full z-[10]'>
                       {t('texts.free')}
                     </div>
@@ -181,7 +213,7 @@ export default function Home() {
                 onMouseLeave={() => setHoveredPoint(null)}
               >
                 {hoveredPoint === point.id && (
-                  <div className="absolute bottom-full bottom-10 left-1/2 transform -translate-x-1/2 bg-cyan-900 text-white px-2 py-1 pt-2 rounded text-xs whitespace-nowrap">
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 bg-cyan-900 text-white px-2 py-1 pt-2 rounded text-xs whitespace-nowrap">
                     {point.name}
                   </div>
                 )}

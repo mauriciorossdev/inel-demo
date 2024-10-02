@@ -1,7 +1,7 @@
 'use client'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import {  useParams } from 'next/navigation'
 import LanguageSwitcher from './LanguageSwitcher'
 import Link from 'next/link'
 
@@ -9,8 +9,9 @@ export default function Navbar() {
   const t = useTranslations('Index')
   const [selectedOption, setSelectedOption] = useState('home')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const router = useRouter()
-  const locale = router.locale || 'es'
+/*   const pathname = usePathname() */
+  const params = useParams()
+  const locale = params.locale || 'es'
 
   const menuItems = [
     {
