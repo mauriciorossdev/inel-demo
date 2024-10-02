@@ -29,13 +29,49 @@
       },
       "texts": {
         "free": "Free"
+      },
+      "masterclass": {
+        "1": {
+          "title": "Masterclass 1",
+          "description": "Ensures the protection of electronic equipment"
+        },
+        "2": {
+          "title": "Masterclass 2",
+          "description": "Minimizes electrical accidents at work"
+        },
+        "3": {
+          "title": "Masterclass 3",
+          "description": "Promotes agricultural and livestock production"
+        }
+      },
+      "programs": {
+        "1": {
+          "title": "Live",
+          "subtitle": "Synchronous",
+          "description": "Connect to the class schedule, interact with the instructor and resolve your doubts immediately."
+        },
+        "2": {
+          "title": "Recorded",
+          "subtitle": "Asynchronous",
+          "description": "Without time? Take the classes at your own pace at the time you want."
+        }
+      },
+      "courses": {
+        "1": {
+          "title": "Course 1",
+          "description": "Corporate courses - Electrical Engineering"
+        },
+        "2": {
+          "title": "Course 2",
+          "description": "Corporate courses - Mechanical Engineering"
+        }
       }
     },
     "About": {
-      "title": "What do our courses offer",
+      "title": "What do our courses offer?",
       "steps": {
         "step1": {
-          "title": "Tailored",
+          "title": "Customized",
           "description": "Courses tailored to your goals and needs"
         },
         "step2": {

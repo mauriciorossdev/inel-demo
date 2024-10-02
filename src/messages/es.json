@@ -29,6 +29,42 @@
     },
     "texts": {
       "free": "Gratuito"
+    },
+    "masterclass": {
+      "1": {
+        "title": "Masterclass 1",
+        "description": "Garantiza la Protección de los Equipos Electrónicos"
+      },
+      "2": {
+        "title": "Masterclass 2",
+        "description": "Minimiza los accidentes eléctricos en tu trabajo"
+      },
+      "3": {
+        "title": "Masterclass 3",
+        "description": "Impulsa la producción agrícola y ganadera"
+      }
+    },
+    "programs": {
+      "1": {
+        "title": "En vivo",
+        "subtitle": "Sincrono",
+        "description": "Conéctate al horario de clases, interactúa con el instructor y resuelve tus dudas al momento."
+      },
+      "2": {
+        "title": "Grabado",
+        "subtitle": "Asincrono",
+        "description": "¿Sin tiempo? Lleva las clases a tu propio ritmo en el horario que desees."
+      }
+    },
+    "courses": {
+      "1": {
+        "title": "Curso 1",
+        "description": "Cursos corporativos - Ingeniería Eléctrica"
+      },
+      "2": {
+        "title": "Curso 2",
+        "description": "Cursos corporativos - Ingeniería Mecánica"
+      }
     }
   },
   "About": {

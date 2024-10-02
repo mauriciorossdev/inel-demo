@@ -13,8 +13,8 @@ export default function Home() {
   const informacionProgramas = {
     masterclass: [
       {
-        title: "Masterclass 1",
-        description: "Garantiza la Protección de los Equipos Electrónicos ",
+        titleKey: "masterclass.1.title",
+        descriptionKey: "masterclass.1.description",
         date: "2024-01-01",
         hours: "10:00 - 12:00",
         gmt: "GMT-5",
@@ -22,8 +22,8 @@ export default function Home() {
         isFree: true
       },
       {
-        title: "Masterclass 2",
-        description: "Minimiza los accidentes eléctricos en tu trabajo",
+        titleKey: "masterclass.2.title",
+        descriptionKey: "masterclass.2.description",
         date: "2024-01-01",
         hours: "10:00 - 12:00",
         gmt: "GMT-5",
@@ -31,8 +31,8 @@ export default function Home() {
         isFree: true
       },
       {
-        title: "Masterclass 3",
-        description: "Impulsa la producción agrícola y ganadera",
+        titleKey: "masterclass.3.title",
+        descriptionKey: "masterclass.3.description",
         date: "2024-01-01",
         hours: "10:00 - 12:00",
         gmt: "GMT-5",
@@ -42,27 +42,27 @@ export default function Home() {
     ],
     programs: [
       {
-        title: "En vivo",
-        subtitle: "Sincrono",
-        description: "Conéctate al horario de clases, interactúa con el instructor y resuelve tus dudas al momento.",
+        titleKey: "programs.1.title",
+        subtitleKey: "programs.1.subtitle",
+        descriptionKey: "programs.1.description",
         image: "/sincrono.jpeg"
       },
       {
-        title: "Grabado",
-        subtitle: "Asincrono",
-        description: "¿Sin tiempo? Lleva las clases a tu propio ritmo en el horario que desees..",
+        titleKey: "programs.2.title",
+        subtitleKey: "programs.2.subtitle",
+        descriptionKey: "programs.2.description",
         image: "/asincrono.jpeg"
       }
     ],
     courses: [
       {
-        title: "Curso 1",
-        description: "Cursos corporativos - Ingeniería Eléctrica",
+        titleKey: "courses.1.title",
+        descriptionKey: "courses.1.description",
         image: "/curso-corporativo-1.jpeg"
       },
       {
-        title: "Curso 2",
-        description: "Cursos corporativos - Ingeniería Mecánica",
+        titleKey: "courses.2.title",
+        descriptionKey: "courses.2.description",
         image: "/curso-corporativo-2.jpeg"
       }
     ]
@@ -140,11 +140,11 @@ export default function Home() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   className="flex flex-col items-center justify-center bg-white rounded-lg p-4 pt-8 text-cyan-900 w-full lg:w-1/3 lg:min-w-[368px] lg:min-h-[424px] hover:shadow-lg hover:shadow-cyan-900/50 hover:cursor-pointer transition-all duration-300 "
                 >
-                 <div className='flex flex-col items-center justify-start h-full'>
-                 <h3 className="text-2xl font-bold mb-2 text-center text-[#0088cc] ">{programa.title}</h3>
-                 <p className="text-base mb-4">{programa.description}</p>
-                 </div>
-                  <Image src={programa.image} alt={programa.title} width={300} height={200} className="rounded-lg transition-all duration-300" />
+                  <div className='flex flex-col items-center justify-start h-full'>
+                    <h3 className="text-2xl font-bold mb-2 text-center text-[#0088cc] ">{t(programa.titleKey)}</h3>
+                    <p className="text-base mb-4">{t(programa.descriptionKey)}</p>
+                  </div>
+                  <Image src={programa.image} alt={t(programa.titleKey)} width={300} height={200} className="rounded-lg transition-all duration-300" />
                   {programa.isFree && (
                     <div className='absolute bottom-8 right-[34px] w-1/2 h-[32px] bg-[#0088cc] text-white font-bold text-lg rounded-l-full z-[10]'>
                       {t('texts.free')}
