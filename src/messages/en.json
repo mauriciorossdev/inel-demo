@@ -1,0 +1,59 @@
+{
+    "Index": {
+      "title": "Welcome to INEL",
+      "description": "Learn at your own pace with our courses",
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "study": "Study",
+        "business": "Business",
+        "work": "Work in INEL"
+      },
+      "compromiso": {
+        "title": "Committed to your professional growth",
+        "masterclass": "Masterclass",
+        "programs": "Programs",
+        "courses": "Corporate Courses"
+      },
+      "world": {
+        "title": "+ 7 years",
+        "description": "Forming engineers in the world",
+        "concepts": {
+          "double": "Double international certification",
+          "ieee": "IEEE Credentialing Program support",
+          "teachers": "Professional teachers",
+          "access": "24/7 access for 1 year",
+          "payment": "Payment facilities",
+          "tutor": "Assigned tutor"
+        }
+      },
+      "texts": {
+        "free": "Free"
+      }
+    },
+    "About": {
+      "title": "What do our courses offer",
+      "steps": {
+        "step1": {
+          "title": "Tailored",
+          "description": "Courses tailored to your goals and needs"
+        },
+        "step2": {
+          "title": "Support",
+          "description": "Personalized support for each student, tutoring and consulting"
+        },
+        "step3": {
+          "title": "Content",
+          "description": "Access to class recordings and support material"
+        },
+        "step4": {
+          "title": "Monitoring",
+          "description": "Monitoring of each student's progress"
+        }
+      }
+    },
+    "NotFound": {
+      "title": "Page not found",
+      "description": "Sorry, the page you are looking for does not exist."
+    }
+  }

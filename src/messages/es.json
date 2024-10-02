@@ -1,0 +1,59 @@
+{
+  "Index": {
+    "title": "Bienvenido a INEL",
+    "description": "Aprende a tu propio ritmo con nuestros cursos",
+    "menu": {
+      "home": "Inicio",
+      "about": "Conócenos",
+      "study": "Estudia",
+      "business": "Para empresas",
+      "work": "Trabaja en INEL"
+    },
+    "compromiso": {
+      "title": "Comprometidos con tu crecimiento profesional",
+      "masterclass": "Masterclass",
+      "programs": "Programas",
+      "courses": "Cursos Corporativos"
+    },
+    "world": {
+      "title": "+ 7 años",
+      "description": "formando ingenieros en el mundo",
+      "concepts": {
+        "double": "Doble certificación internacional",
+        "ieee": "Respaldo de IEEE Credentialing Program",
+        "teachers": "Docentes profesionales",
+        "access": "Acceso 24/7 por 1 año",
+        "payment": "Facilidades de pago",
+        "tutor": "Tutor asignado"
+      }
+    },
+    "texts": {
+      "free": "Gratuito"
+    }
+  },
+  "About": {
+    "title": "¿Qué ofrecen nuestras capacitaciones?",
+    "steps": {
+      "step1": {
+        "title": "A medida",
+        "description": "Capacitaciones orientadas a tus objetivos y necesidades"
+      },
+      "step2": {
+        "title": "Soporte",
+        "description": "Soporte personalizado para cada alumno, tutorías y asesorías"
+      },
+      "step3": {
+        "title": "Contenido",
+        "description": "Acceso a grabaciones de las clases y material de apoyo"
+      },
+      "step4": {
+        "title": "Monitoreo",
+        "description": "Monitoreo de los avances de cada alumno"
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que estás buscando no existe."
+  }
+}
