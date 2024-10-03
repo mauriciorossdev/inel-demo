@@ -86,6 +86,15 @@
           "title": "Monitoring",
           "description": "Monitoring of each student's progress"
         }
+      },
+      "hitos": {
+        "title": "Milestones at INEL",
+        "description": "These relevant events represent significant advances that have marked the growth of our organization.",
+        "2017": "On June 28, we founded Inel, Technical School of Engineering.",
+        "2018": "We opened up to new audiences across Latin America",
+        "2020": "We reached 40 courses, 6 programs, and specialized 5000 students at the highest level.",
+        "2022": "On June 20, we participated for the first time in the most important event in our sector: Expo Energía Perú 2022.",
+        "2023": "We were approved as providers of IEEE CEU/PDH Certificates."
       }
     },
     "NotFound": {

@@ -58,7 +58,9 @@ export default function About() {
   ]
 
   const ref = useRef(null)
+  const refHitos = useRef(null) 
   const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const isInViewHitos = useInView(refHitos, { once: true, amount: 0.2 })
 
   return (
     <div className="container mx-auto px-4 py-20 text-center lg:w-[80vw]">
@@ -148,12 +150,14 @@ export default function About() {
       </div>
 
       <section id="hitos" className="mt-20">
-        <h2 className="text-4xl font-bold mb-10 bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent bg-clip-text">Hitos en INEL</h2>
-        <p className="mb-10">Estos hechos relevantes representan avances significativos que han marcado el crecimiento de nuestra organización.</p>
-        
+        <h2 className="text-4xl font-bold mb-10 bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent bg-clip-text">
+          {t('hitos.title')}
+        </h2>
+        <p className="text-lg text-center lg:w-1/2 mx-auto mb-10">
+          {t('hitos.description')}
+        </p>
         {/* Vista para pantallas grandes */}
-        <div className="hidden md:block relative py-20 mt-32" ref={ref}>
-          <div className="absolute left-0 right-0 bottom-0 bg-black" style={{height: '1px'}}></div>
+        <div className="hidden md:block relative py-20 mt-32" ref={refHitos}>
           <div className="relative h-[300px]">
             <div className="absolute left-0 right-0 bottom-0 bg-black" style={{
               height: '2px',
@@ -166,16 +170,17 @@ export default function About() {
                 className="absolute flex flex-col items-center" 
                 style={{
                   left: `${index * 20}%`, 
-                  bottom: `${index * 50}px`
+                  bottom: `${index * 50}px`,
+                  zIndex: 100
                 }}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                animate={ isInViewHitos ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
                  <motion.div 
                   className="text-center mt-4"
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  animate={ isInViewHitos ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.3, delay: (index * 0.2) + 0.2 }}
                 >
                   <h3 className="text-xl font-bold">{hito.year}</h3>
@@ -184,7 +189,7 @@ export default function About() {
                 <motion.div 
                   className="w-[100px] h-[100px] bg-gradient-to-t from-blue-500 to-cyan-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/50"
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 20 } : {}}
+                  animate={ isInViewHitos ? { opacity: 1, y: 20 } : {}}
                   transition={{ duration: 0.3, delay: index * 0.2 }}
                 >
                   <i className={`fas fa-${hito.icon}`}></i>

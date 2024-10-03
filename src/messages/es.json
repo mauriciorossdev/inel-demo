@@ -86,6 +86,15 @@
         "title": "Monitoreo",
         "description": "Monitoreo de los avances de cada alumno"
       }
+    },
+    "hitos": {
+      "title": "Hitos en INEL",
+      "description": "Estos hechos relevantes representan avances significativos que han marcado el crecimiento de nuestra organización.",
+      "2017": "El 28 junio fundamos Inel, Escuela Técnica de Ingeniería.",
+      "2018": "Nos abrimos a nuevos públicos a nivel de Latinoamérica",
+      "2020": "Llegamos a brindar 40 cursos, 6 programas y especializar a 5000 alumnos al más alto nivel.",
+      "2022": "El 20 de junio participamos por primera vez del evento más importante de nuestro sector: Expo Energía Perú 2022.",
+      "2023": "Fuimos aprobados como proveedores de of IEEE CEU/PDH Certificates."
     }
   },
   "NotFound": {

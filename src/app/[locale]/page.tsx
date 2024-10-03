@@ -115,7 +115,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col md:p-0 lg:w-[90vw]">
+    <main className="flex min-h-screen flex-col md:p-0">
       <section id="hero" className="z-[2] flex min-h-[50vh] lg:min-h-[70vh] h-full w-full flex-col items-center justify-between lg:flex-row ">
         <Image
           src="/hero.jpeg"
@@ -129,7 +129,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold text-white lg:text-5xl lg:leading-normal lg:font-bold">{t('title')}</h1>
         </div>
       </section>
-      <section id="compromiso" className="bg-white flex flex-col items-center justify-center w-full min-h-[50vh] py-8 px-8">
+      <section id="compromiso" className="bg-white flex flex-col items-center justify-center w-full min-h-[50vh] py-8 px-8 mx-auto">
         <div className="flex flex-col gap-4 items-center justify-center w-full">
           <h2 className="text-3xl font-semibold text-center lg:text-5xl lg:leading-normal lg:font-bold mb-6 bg-gradient-to-r from-[#00c4cc] to-[#0088cc] text-transparent bg-clip-text">
             {t('compromiso.title')}
@@ -188,7 +188,7 @@ export default function Home() {
           </AnimatePresence>
         </div>
       </section>
-      <section id="world" className=" bg-white flex flex-col lg:flex-row items-center justify-center w-full min-h-[50vh] py-8 px-8">
+      <section id="world" className=" bg-white flex flex-col lg:flex-row items-center justify-center w-full min-h-[50vh] py-8 px-8 mx-auto lg:w-[90vw]">
         <div id="world-container" className="flex flex-col gap-4 items-center justify-center w-full lg:w-2/3 lg:pr-8">
           <h2 className="text-3xl m-0 p-0 font-semibold text-cyan-900 lg:text-5xl lg:leading-normal lg:font-bold">
             {t('world.title')}
